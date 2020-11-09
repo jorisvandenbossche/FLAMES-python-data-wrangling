@@ -1,0 +1,18 @@
+name: DS-python-data-analysis
+channels:
+- defaults
+- conda-forge
+dependencies:
+- ipython
+- jupyter
+- matplotlib>3
+- mplleaflet
+- notebook
+- numpy
+- pandas=0.25
+- plotnine
+- pyproj
+- python=3.7
+- requests
+- seaborn
+- xlrd
