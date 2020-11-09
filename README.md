@@ -1,4 +1,4 @@
-# Python for GIS and Geoscience
+# Data wrangling in Python
 
 ## Introduction
 
