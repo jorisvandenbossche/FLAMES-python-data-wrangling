@@ -1,0 +1,16 @@
+name: FLAMES-python
+channels:
+- defaults
+- conda-forge
+dependencies:
+- python=3.8
+- ipython
+- jupyter
+- jupyterlab
+- matplotlib>3
+- numpy
+- pandas>=1.0
+- plotnine
+- requests
+- seaborn
+- xlrd
