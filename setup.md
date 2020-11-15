@@ -141,7 +141,7 @@ After the download, unzip on the location you prefer within your user account (e
 
 __Note:__ Make sure you know where you stored the course material, e.g. `C:/Users/yourusername/Documents/FLAMES-python-data-wrangling`
 
-### 3. Test your configuration
+## 3. Test your configuration
 
 To check if your packages are properly installed, open the Conda Terminal again (see above) and navigate to the course directory:
 
