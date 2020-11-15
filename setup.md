@@ -49,11 +49,11 @@ conda update --all
 
 and respond with *Yes* by typing `y`. Packages should be updated after the completion of the command.
 
-### Setup after installation
+### Setup after Anaconda installation
 
 As not all packages we will use in the course are provided by default as part of Anaconda, we have to add the package to Anaconda to get started. As a good practice, we will create a new _conda environment_ to work with. This environment will contain the required packages on which this course depends.
 
-The packages used in the course are enlisted in an [`environment.yml` file](https://raw.githubusercontent.com/jorisvandenbossche/FLAMES-python-data-wrangling/master/environment.yml). The file looks as follows:
+The packages used in the course are enlisted in an [`environment.yml` file](https://raw.githubusercontent.com/jorisvandenbossche/FLAMES-python-data-wrangling/main/environment.yml). The file looks as follows:
 
 ```
 name: FLAMES-python
@@ -141,7 +141,7 @@ After the download, unzip on the location you prefer within your user account (e
 
 __Note:__ Make sure you know where you stored the course material, e.g. `C:/Users/yourusername/Documents/FLAMES-python-data-wrangling`
 
-### 3. Test your configuration
+## 3. Test your configuration
 
 To check if your packages are properly installed, open the Conda Terminal again (see above) and navigate to the course directory:
 
