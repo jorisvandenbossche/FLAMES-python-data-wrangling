@@ -125,8 +125,8 @@ As the course has been setup as a [git](https://git-scm.com/) repository managed
 Use the command line to clone the repository and go into the course folder:
 
 ```
-> git clone https://github.com/jorisvandenbossche/FLAMES-python-data-wrangling.git
-> cd FLAMES-python-data-wrangling
+git clone https://github.com/jorisvandenbossche/FLAMES-python-data-wrangling.git
+cd FLAMES-python-data-wrangling
 ```
 
 In case you would prefer using Github Desktop, see [this tutorial](https://help.github.com/desktop/guides/contributing-to-projects/cloning-a-repository-from-github-to-github-desktop/).
