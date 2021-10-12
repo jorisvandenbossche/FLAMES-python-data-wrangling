@@ -8,6 +8,7 @@ dependencies:
 - jupyter
 - jupyterlab
 - matplotlib>3
+- ipympl
 - numpy
 - pandas>=1.0
 - plotnine
