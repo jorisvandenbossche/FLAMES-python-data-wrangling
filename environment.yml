@@ -3,11 +3,12 @@ channels:
 - defaults
 - conda-forge
 dependencies:
-- python=3.8
+- python=3.9
 - ipython
 - jupyter
 - jupyterlab
 - matplotlib>3
+- ipympl
 - numpy
 - pandas>=1.0
 - plotnine
