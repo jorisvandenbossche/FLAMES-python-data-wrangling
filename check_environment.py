@@ -56,10 +56,19 @@ else:
     print(FAIL, "Python 3 is required, but %s is installed." % sys.version)
 
 print()
-requirements = {'numpy': "1.9", 'matplotlib': "3.0",
-                'pandas': "1.0", 'requests': '2.18.0',
-                'seaborn': '0.10', 'xlrd': '1.1.0'}
+requirements = {'numpy': "1.9", 'matplotlib': "2.0",
+                'pandas': "0.25", 'notebook': "5",
+                'plotnine': '0.6',
+                'pyproj': '1.9.5.1', 'requests': '2.18.0',
+                'seaborn': '0.9.0', 'xlrd': '1.1.0'}
 
 # now the dependencies
 for lib, required_version in list(requirements.items()):
     import_version(lib, required_version)
+
+# mplleaflet has no option to derive __version__
+try:
+    import mplleaflet
+    print(OK, '%s can be loaded' % ('mplleaflet'))
+except:
+    print(FAIL, '%s can not be loaded.' % ('mplleaflet'))
