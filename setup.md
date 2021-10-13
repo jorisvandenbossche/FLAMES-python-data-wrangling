@@ -41,12 +41,6 @@ Type following command + ENTER-button (make sure you have an internet connection
 conda update -n root conda
 ```
 
-when finished, type (+ ENTER-button):
-
-```
-conda update --all
-```
-
 and respond with *Yes* by typing `y`. Packages should be updated after the completion of the command.
 
 ### Setup after Anaconda installation
@@ -61,7 +55,7 @@ channels:
 - defaults
 - conda-forge
 dependencies:
-- python=3.8
+- python=3.9
 - ipython
 - jupyter
 - ...
