@@ -1,18 +1,18 @@
-name: DS-python-data-analysis
+name: FLAMES-python
 channels:
 - defaults
 - conda-forge
 dependencies:
+- python=3.9
 - ipython
 - jupyter
+- jupyterlab
 - matplotlib>3
-- mplleaflet
-- notebook
+- ipympl
 - numpy
-- pandas=0.25
+- pandas>=1.0
 - plotnine
-- pyproj
-- python=3.7
 - requests
 - seaborn
 - xlrd
+- openpyxl
