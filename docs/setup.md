@@ -64,7 +64,6 @@ an [`environment.yml` file](https://raw.githubusercontent.com/jorisvandenbossche
 ```
 name: FLAMES-python
 channels:
-- defaults
 - conda-forge
 dependencies:
 - python=3.11
