@@ -2,16 +2,17 @@ name: FLAMES-python
 channels:
 - conda-forge
 dependencies:
-- python=3.9
+- python=3.11
 - ipython
 - jupyter
-- jupyterlab
-- matplotlib>3
-- ipympl
+- jupyterlab>=3
 - numpy
-- pandas>=1.0
-- plotnine
-- requests
+- pandas>=1
+- matplotlib>3
+- mplleaflet
+- ipympl
 - seaborn
-- xlrd
+- plotnine
+- pyproj
+- requests
 - openpyxl
