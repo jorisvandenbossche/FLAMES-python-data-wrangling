@@ -256,6 +256,74 @@ conda env export > environment.yml
  ...the stuff we're dealing with in this course!
 
 ---
+class: middle, day_background
+
+# Overview of the first day
+
+* Introduction to Jupyter notebook
+* Pandas fundamentals
+* *Case study:* Bike count
+
+---
+# After DAY 1
+
+## How are you feeling?
+
+### https://forms.gle/JX2GdHcweUqAL28G9
+
+---
+class: middle, day_background
+
+# Overview of the second day
+
+* Advanced Pandas
+* Visualization: Introduction to Matplotlib
+* Pandas: reshaping data
+* *Case study:* Organism observations
+* *Case study:* Bacterial resistance lab study
+
+
+---
+class: middle, section_background
+
+# Pandas
+
+---
+
+## Pandas: data analysis in python
+
+For data-intensive work in Python the [Pandas](http://pandas.pydata.org) library has become essential.
+
+What is `pandas`?
+
+* Pandas can be thought of as *NumPy arrays with labels* for rows and columns, and better support for heterogeneous data types, but it's also much, much more than that.
+* Pandas can also be thought of as `R`'s `data.frame` or `tidyverse` in Python.
+* Powerful for working with missing data, working with time series data, for reading and writing your data, for reshaping, grouping, merging your data, ...
+
+It's documentation: http://pandas.pydata.org/pandas-docs/stable/
+
+---
+
+## When do you need pandas?
+
+When working with **tabular or structured data** (like R dataframe, SQL table, Excel spreadsheet, ...):
+
+- Import data
+- Clean up messy data
+- Explore data, gain insight into data
+- Process and prepare your data for analysis
+- Analyse your data (together with scikit-learn, statsmodels, ...)
+
+---
+
+## Attention!
+
+Pandas is great for working with heterogeneous and tabular 1D/2D data, but not all types of data fit in such structures!
+
+* When working with array data (e.g. images, numerical algorithms): just stick with Numpy
+* When working with multidimensional labeled data (e.g. climate data): have a look at [xarray](http://xarray.pydata.org/en/stable/)
+
+---
 class: middle, section_background
 
 # Tidy data
