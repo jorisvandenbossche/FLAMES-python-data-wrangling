@@ -1,0 +1,1 @@
+casualties_raw["TX_SEX_DESCR_NL"].unique()

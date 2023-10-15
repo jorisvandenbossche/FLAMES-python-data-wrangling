@@ -1,0 +1,1 @@
+casualties_raw["DT_HOUR"] = casualties_raw["DT_HOUR"].replace(99, 9)
