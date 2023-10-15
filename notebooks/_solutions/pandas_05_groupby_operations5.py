@@ -1,0 +1,1 @@
+df.groupby('Pclass')['Survived'].mean().plot.bar() #and what if you would compare the total number of survivors?

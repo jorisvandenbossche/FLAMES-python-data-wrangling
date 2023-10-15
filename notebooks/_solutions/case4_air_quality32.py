@@ -1,1 +1,0 @@
-sns.set_style("whitegrid")

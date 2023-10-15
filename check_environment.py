@@ -3,9 +3,11 @@
 # and glemaitre: https://github.com/glemaitre/pyparis-2018-sklearn/blob/master/check_environment.py
 
 from __future__ import print_function
-from distutils.version import LooseVersion as Version
 import sys
 
+# packaging is not in the stdlib, but should be available as dependency of
+# some other package (eg jupyterlab, matplotlib, ..)
+from packaging import version
 
 try:
     import curses
@@ -34,7 +36,7 @@ def import_version(pkg, min_ver, fail_msg=""):
             ver = mod.__VERSION__
         else:
             ver = mod.__version__
-        if Version(ver) < min_ver:
+        if version.parse(ver) < version.parse(min_ver):
             print(FAIL, "%s version %s or higher required, but %s installed."
                   % (lib, min_ver, ver))
         else:
@@ -47,19 +49,27 @@ def import_version(pkg, min_ver, fail_msg=""):
 # first check the python version
 print('Using python in', sys.prefix)
 print(sys.version)
-pyversion = Version(sys.version)
-if pyversion >= "3":
-    if pyversion < "3.6":
-        print(FAIL, "Python version 3.6 is required,"
+pyversion = version.parse(sys.version.split(" ")[0])
+if pyversion >= version.parse("3"):
+    if pyversion < version.parse("3.8"):
+        print(FAIL, "Python version 3.8 is required,"
                     " but %s is installed." % sys.version)
 else:
     print(FAIL, "Python 3 is required, but %s is installed." % sys.version)
 
 print()
-requirements = {'numpy': "1.9", 'matplotlib': "3.0",
-                'pandas': "1.0", 'requests': '2.18.0',
-                'seaborn': '0.10', 'xlrd': '1.1.0'}
+requirements = {'numpy': "1.9", 'matplotlib': "2.0",
+                'pandas': "1.2", 'jupyterlab': "3",
+                'pyproj': '2.6', 'requests': '2.18.0',
+                'seaborn': '0.9.0'}
 
 # now the dependencies
 for lib, required_version in list(requirements.items()):
     import_version(lib, required_version)
+
+# mplleaflet has no option to derive __version__
+try:
+    import mplleaflet
+    print(OK, '%s can be loaded' % ('mplleaflet'))
+except:
+    print(FAIL, '%s can not be loaded.' % ('mplleaflet'))
