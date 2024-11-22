@@ -7,7 +7,7 @@ dependencies:
 - jupyter
 - jupyterlab>=3
 - numpy
-- pandas>=1
+- pandas>2
 - matplotlib>3
 - mplleaflet
 - ipympl
@@ -16,3 +16,4 @@ dependencies:
 - pyproj
 - requests
 - openpyxl
+- geopandas
