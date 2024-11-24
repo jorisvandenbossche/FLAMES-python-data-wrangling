@@ -1,3 +1,3 @@
 subset = data.loc['2009-01'].copy()
-subset["weekday"] = subset.index.weekday
-subset = subset[subset['weekday'].isin([0, 6])]
+subset["dayofweek"] = subset.index.dayofweek
+subset = subset[subset['dayofweek'].isin([0, 6])]
