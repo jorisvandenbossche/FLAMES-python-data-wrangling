@@ -43,4 +43,5 @@ Found any typo or have a suggestion, see [how to contribute](./docs/contributing
 
 Authors: Joris Van den Bossche, Stijn Van Hoey
 
+<img src="./static/img/logo_vaia.jpg">
 
