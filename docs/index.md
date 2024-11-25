@@ -60,6 +60,6 @@ Found any typo or have a suggestion, see [how to contribute](./contributing.html
 ## Meta
 Authors: Joris Van den Bossche, Stijn Van Hoey
 
-<img src="./static/img/logo_flanders+richtingmorgen.png" width="69%">
-<img src="./static/img/logo_vaia.jpg" width="30%">
+<img src="./static/img/logo_flanders+richtingmorgen.png" width="49%">
+<img src="./static/img/logo_vaia.jpg" width="50%">
 
